@@ -1,0 +1,87 @@
+
+
+/* Container */
+.message-skeleton {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+.message-skeleton > * + * {
+  margin-top: 1rem;
+}
+
+/* Message row alignment */
+.message-row {
+  display: flex;
+  align-items: flex-start;
+}
+.message-row--start {
+  justify-content: flex-start;
+}
+.message-row--end {
+  justify-content: flex-end;
+}
+
+/* Avatar */
+.message-avatar {
+  margin-right: 0.5rem;
+}
+.message-row--end .message-avatar {
+  order: 2;
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+.avatar-circle {
+  width: 2.5rem;   /* Tailwind size-10 */
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Message body */
+.message-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header skeleton */
+.message-header {
+  margin-bottom: 0.25rem;  /* Tailwind mb-1 */
+}
+
+/* Bubble wrapper */
+.message-bubble {
+  background: transparent;
+  padding: 0;
+}
+
+/* Skeleton base */
+.skeleton {
+  background-color: #e5e7eb;
+  border-radius: 0.25rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Specific skeleton sizes */
+.skeleton-avatar {
+  width: 100%;
+  height: 100%;
+}
+.skeleton-header {
+  width: 4rem;  /* Tailwind w-16 */
+  height: 1rem; /* Tailwind h-4 */
+}
+.skeleton-message {
+  width: 200px; /* Tailwind w-[200px] */
+  height: 4rem; /* Tailwind h-16 */
+}

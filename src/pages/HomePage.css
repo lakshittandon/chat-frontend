@@ -1,0 +1,32 @@
+/* Full viewport height + light background */
+.homepage {
+  height: 100vh;
+  background-color: #f3f4f6; /* was bg-base-200 */
+}
+
+/* Center container with top padding and horizontal padding */
+.homepage__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;   /* was pt-20 */
+  padding-left: 1rem;  /* was px-4 */
+  padding-right: 1rem; /* was px-4 */
+}
+
+/* White card with rounded corners, shadow, full width up to max */
+.homepage__container {
+  width: 100%;
+  max-width: 72rem;                 /* was max-w-6xl */
+  height: calc(100vh - 8rem);       /* was h-[calc(100vh-8rem)] */
+  background-color: #ffffff;        /* was bg-base-100 */
+  border-radius: 0.5rem;            /* was rounded-lg */
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1); /* approx. shadow-cl */
+  overflow: hidden;
+}
+
+/* Flex inner to hold sidebar + chat pane */
+.homepage__inner {
+  display: flex;
+  height: 100%;
+}

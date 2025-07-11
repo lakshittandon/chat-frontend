@@ -1,0 +1,75 @@
+.msg-input-wrap {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* image preview section */
+.img-preview {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.img-preview img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid #6b7280;
+}
+.preview-close {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* form */
+.msg-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.msg-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.file-hidden {
+  display: none;
+}
+
+/* icon buttons */
+.icon-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
+}
+.choose-img:hover {
+  background: #f3f4f6;
+}
+.send-btn {
+  background: #3b82f6;
+  color: #fff;
+}
+.send-btn:hover {
+  background: #1e40af;
+}
+.send-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

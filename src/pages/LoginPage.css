@@ -1,0 +1,105 @@
+/* full-page centre layout */
+.login-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f9fb;
+}
+
+/* white card */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* logo row */
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+/* headings */
+.login-headline {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.login-sub {
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  color: #6b7280;
+}
+
+/* form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+.login-form label {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+/* input wrapper */
+.login-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+.login-field input {
+  flex: 1;
+  border: none;
+  font-size: 0.95rem;
+  outline: none;
+}
+/* eye toggle */
+.eye-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+/* submit */
+.login-form button[type='submit'] {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.login-form button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* footer */
+.login-foot {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+.login-foot a {
+  color: #3b82f6;
+  text-decoration: none;
+}

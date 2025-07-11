@@ -1,0 +1,30 @@
+:root {
+  --primary: #3b82f6;
+  --primary-rgb: 59, 130, 246;
+  --base-content-rgb: 17, 24, 39;
+  --input-border: #d1d5db;
+}
+/* Spinner overlay full-screen centering */
+.app-spinner-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Spinner size + animation */
+.app-spinner {
+  width: 2.5rem;      /* same as Tailwind size-10 */
+  height: 2.5rem;
+  animation: spin 1s linear infinite;
+}
+
+/* Utility for centered loader with top margin */
+.app-spinner--mt {
+  margin: 2.5rem auto 0;  /* mt-10 + mx-auto */
+}
+
+/* Keyframes for spin */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
